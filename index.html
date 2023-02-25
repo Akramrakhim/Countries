@@ -4,15 +4,142 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <title>Countries</title>
   <!-- STYLES CSS LINKS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<header class="site-header">
+  <div class="container header-container">
+  <h2 class="site-header-logo"><a class="site-header-logo-link" href="index.html">Where in the world?</a></h2>
+  <a class="dark-light-mode" href="">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none"><path fill="#fff" fill-rule="evenodd" stroke="#111517" stroke-width="1.25" d="M12.553 11.815c-3.884 0-7.034-2.887-7.034-6.447 0-1.343.448-2.586 1.212-3.618C3.691 2.695 1.5 5.331 1.5 8.438c0 3.9 3.45 7.062 7.704 7.062 3.389 0 6.266-2.007 7.296-4.796a7.458 7.458 0 0 1-3.947 1.111Z" clip-rule="evenodd"/></svg>
+    Dark Mode</a>
+  </div>
+</header>
+
+<main class="main-content">
+  
+  <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+    <div class="container form-container">
+      <input class="search-input" aria-label="search" type="search" name="search" id="search" placeholder="Search for a country…" required >
+    <select class="form-select" name="course_type" id="course-type-select">
+      <option class="form-select-option" value="Africa">Africa</option>
+      <option class="form-select-option" value="America">America</option>
+      <option class="form-select-option" value="Asia">Asia</option>
+      <option class="form-select-option" value="Europe">Europe</option>
+      <option class="form-select-option" value="Oceania">Oceania</option>
+    </select>
+  </div>
+</form>
+
+<div class="container countries-container">
+<ul class="countries-list">
+  <li class="countries-item">
+    <img class="countries-img" src="img/Germany.svg" alt="" width="267" height="160">
+    <div class="countries-action">
+    <h3 class="countries-action-heading">Germany</h3>
+        <p class="countries-action-text">
+          <b>Population:</b> 81,770,900 <br>
+          <b>Region:</b> Europe <br>
+          <b>Capital:</b> Berlin <br>
+        </p>
+    </div>
+  </li>
+
+  <li class="countries-item">
+    <img class="countries-img" src="img/Usa.svg" alt="" width="267" height="160">
+    <div class="countries-action">
+    <h3 class="countries-action-heading">United States of America</h3>
+        <p class="countries-action-text">
+          <b>Population:</b> 323,947,000 <br>
+          <b>Region:</b> Americas <br>
+          <b>Capital:</b> Washington, D.C. <br>
+        </p>
+    </div>
+  </li>
+
+  <li class="countries-item">
+    <img class="countries-img" src="img/Brazil.svg.svg" alt="" width="267" height="160">
+    <div class="countries-action">
+    <h3 class="countries-action-heading">Brazil</h3>
+        <p class="countries-action-text">
+          <b>Population:</b> 206,135,893 <br>
+          <b>Region:</b> Americas <br>
+          <b>Capital:</b> Brasília <br>
+        </p>
+    </div>
+  </li>
+
+  <li class="countries-item">
+    <img class="countries-img" src="img/Iceland.svg.svg" alt="" width="267" height="160">
+    <div class="countries-action">
+    <h3 class="countries-action-heading">Iceland</h3>      
+        <p class="countries-action-text">
+          <b>Population:</b> 334,300 <br>
+          <b>Region:</b> Europe <br>
+          <b>Capital:</b> Reykjavík <br>
+        </p>
+    </div>
+  </li>
+</ul>
+
+<ul class="countries-list countries-list-bottom">
+  <li class="countries-item">
+    <img class="countries-img" src="img/Afghanistan.svg" alt="" width="267" height="160">
+    <div class="countries-action">
+    <h3 class="countries-action-heading">Afghanistan</h3>
+        <p class="countries-action-text">
+          <b>Population:</b> 27,657,145 <br>
+          <b>Region:</b> Asia <br>
+          <b>Capital:</b> Kabul <br>
+        </p>
+    </div>
+  </li>
+
+  <li class="countries-item">
+    <img class="countries-img" src="img/Island.svg.svg" alt="" width="267" height="160">
+    <div class="countries-action">
+    <h3 class="countries-action-heading">Åland Islands</h3>
+        <p class="countries-action-text">
+          <b>Population:</b> 28,875 <br>
+          <b>Region:</b> Europe <br>
+          <b>Capital:</b> Mariehamn <br>
+        </p>
+    </div>
+  </li>
+
+  <li class="countries-item">
+    <img class="countries-img" src="img/Albania.svg.svg" alt="" width="267" height="160">
+    <div class="countries-action">
+    <h3 class="countries-action-heading">Albania</h3>
+        <p class="countries-action-text">
+          <b>Population:</b> 2,886,026 <br>
+          <b>Region:</b> Europe <br>
+          <b>Capital:</b> Tirana <br>
+        </p>
+    </div>
+  </li>
+
+  <li class="countries-item">
+    <img class="countries-img" src="img/Algeria.svg.svg" alt="" width="267" height="160">
+    <div class="countries-action">
+    <h3 class="countries-action-heading">Algeria</h3>      
+        <p class="countries-action-text">
+          <b>Population:</b>40,400,000 <br>
+          <b>Region:</b> Africa <br>
+          <b>Capital:</b>Algiers <br>
+        </p>
+    </div>
+  </li>
+</ul>
+</div>
 
 
+
+</main>
 
   <script src="js/main.js"></script>
 </body>
