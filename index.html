@@ -25,26 +25,24 @@
 </header>
 
 <main class="main-content">
-  
-  <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-    <div class="container form-container">
-      <input class="search-input" aria-label="search" type="search" name="search" id="search" placeholder="Search for a country…" required >
-    <select class="form-select" name="course_type" id="course-type-select">
-      <option class="form-select-option" value="Africa">Africa</option>
-      <option class="form-select-option" value="America">America</option>
-      <option class="form-select-option" value="Asia">Asia</option>
-      <option class="form-select-option" value="Europe">Europe</option>
-      <option class="form-select-option" value="Oceania">Oceania</option>
+  <div class="container">
+  <form class="filters" action="https://echo.htmlacademy.ru" method="get">
+      <input class="filters-search-input" aria-label="Country name" type="search" name="search" placeholder="Search for a country…" required >
+    <select class="filters-region-select" name="region" aria-label="Regions">
+      <option selected disabled>Filter by Region</option>
+      <option>Africa</option>
+      <option>America</option>
+      <option>Asia</option>
+      <option>Europe</option>
+      <option>Oceania</option>
     </select>
-  </div>
 </form>
 
-<div class="container countries-container">
 <ul class="countries-list">
   <li class="countries-item">
     <img class="countries-img" src="img/Germany.svg" alt="" width="267" height="160">
     <div class="countries-action">
-    <h3 class="countries-action-heading">Germany</h3>
+    <h3 class="countries-action-heading"><a class="countries-action-link" href="detail.html"> Germany</a></h3>
         <p class="countries-action-text">
           <b>Population:</b> 81,770,900 <br>
           <b>Region:</b> Europe <br>
@@ -139,10 +137,9 @@
     </div>
   </li>
 </ul>
+
+
 </div>
-
-
-
 </main>
 
   <script src="js/main.js"></script>

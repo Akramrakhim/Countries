@@ -3,12 +3,14 @@
   --body-bg:#fafafa;
   --element-bg:#fff;
   --text-color:#111517;
+  --search-color:#848484;
 }
 
 .dark-mode{
   --body-bg:#202c36;
   --element-bg:#2b3844;
   --text-color:#fff;
+  --search-color:#fff;
 }
 /* FONTS */
 
@@ -110,6 +112,8 @@ margin-left: auto;
 
 .main-content{
   flex-grow: 1;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 /* SITE-HEADER */
@@ -118,7 +122,7 @@ margin-left: auto;
   padding-top: 24px;
   padding-bottom: 24px; 
   background-color: var(--element-bg);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
   white-space: nowrap;
 }
 
@@ -173,49 +177,45 @@ margin-left: auto;
 
 /* FORM SECTION */
 
-.form {
-  padding-top: 48px;
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 48px;
 }
 
-.form-container{
-  display: flex;
-  justify-content: space-between;
-  align-items:space-between;
-}
-
-.search-input {
-  width: 480px;
-  padding: 18px 25px;
-  border: 0;
+.filters-search-input {
+  min-width: 480px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: 18px 74px;
+  border: 0; 
   font-weight: 400;
   font-size: 14px;
-  color:#848484;
+  color:var(--search-color);
+  background: var(--element-bg);
   line-height: 20px;
-  background: var(--element-bg);
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
-  border-radius: 5px;
 }
 
-.form-select {
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  border: 0;
-  padding: 18px 5px;
-  background: var(--element-bg);
-  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
-  border-radius: 5px;
+.filters-search-input::placeholder{
+  color: var(--search-color);
 }
 
-.form-select-option {
-  padding: 24px 16px;
+.filters-region-select {
+  min-width: 200px;
+  background: var(--element-bg);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
   font-weight: 400;
   font-size: 14px;
   color: var(--text-color);
+  padding: 18px 24px; 
+  border: 0;
 }
 
-/* BAYROQLAR */
+
+
+/* FLAGS */
 
 .countries-list {
   display: flex;
@@ -243,6 +243,7 @@ margin-left: auto;
 .countries-img {
   width: 264px;
   height: 160px;
+  object-fit: cover;
 }
 
 .countries-action-heading {
@@ -252,6 +253,19 @@ margin-left: auto;
   font-size: 18px;
   color:var(--text-color)
 }
+
+.countries-action-link{
+  color: var(--text-color);
+}
+
+.countries-action-link:hover{
+  opacity: 0.8;
+}
+
+.countries-action-link:active{
+  opacity: 0.6;
+}
+
 
 .countries-action-text {
   padding: 0;
