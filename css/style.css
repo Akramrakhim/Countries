@@ -272,10 +272,10 @@ margin-left: auto;
 }
 
 .countries-action-details-title {
-  margin: 0;
+  font-weight: 600;
 }
-.countries-action-details-value {
-  margin: 0;
+.countries-action-details-value {  
+  margin-left: 4px;
 }
 
 .countries-action-link{
