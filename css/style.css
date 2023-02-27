@@ -213,45 +213,69 @@ margin-left: auto;
   border: 0;
 }
 
-
-
 /* FLAGS */
 
 .countries-list {
   display: flex;
-  align-items:center;
-  justify-content: space-between;
+  flex-wrap: wrap ;
+  margin-left: -75px;
+  margin-bottom: -75px;
   padding: 0;
   margin: 0;
 }
 
 .countries-item{
+  width: calc(25% - 75px);
+  margin-left: 75px;
+  margin-bottom: 75px;
   border-radius:5px;
+  overflow: hidden;
   background-color: var(--element-bg);
   box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.2);
 }
 
-.countries-item:not(:last-child) {
-  margin-right: 75px;
-}
 
 .countries-action {
-  padding-left: 24px;
-  padding-bottom: 46px;
+  
 }
 
 .countries-img {
-  width: 267px;
+  width: 100%;
   height: 160px;
   object-fit: cover;
 }
 
-.countries-action-heading {
-  margin-top: 24px;
+.index-country-info{
+  padding: 24px 24px 48px;
+}
+
+.countries-action-name {
+  margin-top: 0;
   margin-bottom: 16px;
   font-weight: 800;
   font-size: 18px;
+  line-height: 26px;
   color:var(--text-color)
+}
+
+.countries-action-details {
+  margin: 0;
+}
+
+.countries-action-details-item{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.countries-action-details-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.countries-action-details-title {
+  margin: 0;
+}
+.countries-action-details-value {
+  margin: 0;
 }
 
 .countries-action-link{
@@ -265,7 +289,6 @@ margin-left: auto;
 .countries-action-link:active{
   opacity: 0.6;
 }
-
 
 .countries-action-text {
   padding: 0;
