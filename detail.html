@@ -26,10 +26,12 @@
 
 <main class="main-content">
   <div class="container">
-      <a class="details-back-button" href="index.html">
-        <span class="details-back-button-img">
-          <svg class="details-back-button-svg" xmlns="http://www.w3.org/2000/svg" width="19" height="12" fill="none"><path fill="currentColor" fill-rule="evenodd" d="m6.464.107 1.179 1.179-3.89 3.889h14.85v1.65H3.753l3.89 3.889-1.179 1.179L.572 6 6.464.107Z" clip-rule="evenodd"/></svg>
-        </span>Back</a>
+      <div class="country-page-back-wrapper">
+        <a class="details-back-button" href="index.html">
+          <svg class="details-back-button-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="currentColor" fill-rule="evenodd" d="m6.464 4.107 1.179 1.179-3.89 3.889h14.85v1.65H3.753l3.89 3.889-1.179 1.179L.572 10l5.892-5.893Z" clip-rule="evenodd"/></svg>
+          <span class="details-back-button-text"> Back</span>
+        </a>
+      </div>
 
     <div class="details-box">
       <ul class="details-box-list">
@@ -39,25 +41,57 @@
         <li class="details-box-item">
           <h2 class="details-box-action-heading">Belgium</h2>
           <div class="details-box-action">
-              <p class="details-box-action-text details-box-action-text-left">
-              <b>Native Name:</b> België<br>
-              <b>Population:</b>  11,319,511 <br>
-              <b>Region:</b> Europe <br>
-              <b>Sub Region:</b> Western Europe<br>
-              <b>Capital:</b> Brussels <br>
-            </p>
-            <p class="details-box-action-text">
-              <b>Top Level Domain: </b> .be <br>
-              <b>Currencies:</b> Euro <br>
-              <b>Languages:</b> Dutch, French, German <br>
-            </p>
+
+            <dl class="countries-action-details details-box-action-text details-box-action-text-left">
+              <div class="countries-action-details-item">
+                <dt class="countries-action-details-title">Native Name:</dt>
+                <dd class="countries-action-details-value">België</dd>
+              </div>
+
+              <div class="countries-action-details-item">
+                <dt class="countries-action-details-title">Population:</dt>
+                <dd class="countries-action-details-value">11,319,511</dd>
+              </div>
+        
+              <div class="countries-action-details-item">
+                <dt class="countries-action-details-title">Region:</dt>
+                <dd class="countries-action-details-value">Europe</dd>
+              </div>
+
+              <div class="countries-action-details-item">
+                <dt class="countries-action-details-title">Sub Region:</dt>
+                <dd class="countries-action-details-value">Western Europe</dd>
+              </div>
+        
+              <div class="countries-action-details-item">
+                <dt class="countries-action-details-title">Capital:</dt>
+                <dd class="countries-action-details-value">Brussels</dd>
+              </div>
+            </dl>
+
+            <dl class="countries-action-details details-box-action-text">
+              <div class="countries-action-details-item">
+                <dt class="countries-action-details-title">Top Level Domain:</dt>
+                <dd class="countries-action-details-value">.be</dd>
+              </div>
+
+              <div class="countries-action-details-item">
+                <dt class="countries-action-details-title">Currencies:</dt>
+                <dd class="countries-action-details-value">Euro</dd>
+              </div>
+        
+              <div class="countries-action-details-item">
+                <dt class="countries-action-details-title">Languages:</dt>
+                <dd class="countries-action-details-value">Dutch, French, German </dd>
+              </div>
+            </dl>
             </div>
           
             <div class="details-box-action-buttons">
               <h3 class="details-box-action-buttons-heading">Border Countries:</h3>
-              <button class="button button-border-countries">France</button>
-              <button class="button button-border-countries">Germany</button>
-              <button class="button button-border-countries">Netherlands</button>
+              <a class="button button-border-countries" href="#">France</a>
+              <a class="button button-border-countries" href="#">Germany</a>
+              <a class="button button-border-countries" href="#">Netherlands</a>
           </div>
         </li>
       </ul>
