@@ -79,8 +79,8 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   font-family: "Nunito Sans", sans-serif;
   background-color:var(--body-bg);
   color: var(--text-color);
@@ -134,8 +134,8 @@ margin-left: auto;
 }
 
 .site-header-logo-link {
-  font-size: 24px;
-  line-height: normal;
+  font-size: 1.5rem;
+  line-height: 2.06rem;
   font-weight: 800;
   color: var(--text-color);
 }
@@ -170,8 +170,8 @@ margin-left: auto;
 }
 .site-header-theme-toggler-text {
   margin-left: 8px;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.375rem;
   font-weight: 600;
   color: var(--text-color);
 }
@@ -205,10 +205,10 @@ margin-left: auto;
   padding: 18px 74px;
   border: 0; 
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color:var(--search-color);
   background: var(--element-bg);
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 .filters-search-input::placeholder{
@@ -221,7 +221,7 @@ margin-left: auto;
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--text-color);
   padding: 18px 24px; 
   border: 0;
@@ -262,8 +262,8 @@ margin-left: auto;
   margin-top: 0;
   margin-bottom: 16px;
   font-weight: 800;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
   color:var(--text-color)
 }
 
@@ -321,7 +321,7 @@ margin-left: auto;
   background-color: var(--element-bg);
   color: var(--text-color);
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
-border-radius: 6px;
+  border-radius: 6px;
 }
 
 .details-back-button:hover{
@@ -338,8 +338,8 @@ border-radius: 6px;
   height: 20px;
 }
 .details-back-button-text {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 .details-box {
@@ -374,8 +374,8 @@ border-radius: 6px;
   margin-bottom: 23px;
   font-style: normal;
   font-weight: 800;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;;
+  line-height: 2.75rem;
   color:var(--text-color)
 }
 
@@ -383,8 +383,8 @@ border-radius: 6px;
   margin: 0;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 .details-box-action-text-left{
@@ -402,8 +402,8 @@ border-radius: 6px;
   margin: 0;
   margin-right: 15px;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 .button {
@@ -414,8 +414,8 @@ border-radius: 6px;
   margin-bottom: 4px;
   border:0;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
   background: var(--element-bg);
   color:var(--text-color);
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
@@ -434,4 +434,60 @@ border-radius: 6px;
 
 .button:active{
   opacity: 0.6;
+}
+
+
+
+@media only screen and (max-width:23.4375em) {
+  .main-content{
+  padding-top: 24px;
+  padding-bottom: 25px;
+  }
+  .site-header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .site-header-logo-link{
+    font-size: 0.88rem;
+    line-height: 1.25rem;
+  }
+
+  .site-header-theme-toggler-text{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .filters{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 32px;
+  }
+
+  .filters-search-wrapper{
+    margin-bottom: 40px;
+  }
+
+  .filters-search-input{
+    min-width: 343px;
+    padding: 14px 74px;
+    font-size: 0.75rem;
+  }
+
+  .filters-region-select{
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+
+  .countries-list{
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 0; 
+    margin-bottom: 0;
+  }
+
+  .countries-item{
+    width: 264px;
+    margin: 0 35px 40px;
+  }
 }
